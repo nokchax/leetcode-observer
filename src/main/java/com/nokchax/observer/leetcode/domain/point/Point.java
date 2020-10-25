@@ -1,11 +1,12 @@
 package com.nokchax.observer.leetcode.domain.point;
 
+import com.nokchax.observer.leetcode.domain.user.User;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
 
 public class Point {
-    private String userId;
+    private User user;
     private LocalDateTime dateTime;
     private int point;
     private Description description;
