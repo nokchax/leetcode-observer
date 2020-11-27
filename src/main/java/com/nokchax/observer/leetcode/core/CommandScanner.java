@@ -1,15 +1,12 @@
 package com.nokchax.observer.leetcode.core;
 
-import org.springframework.stereotype.Component;
+import java.util.Set;
 
-import javax.annotation.PostConstruct;
-
-@Component
 public class CommandScanner {
     // scan commands
 
-    @PostConstruct
-    public void init() {
+    public static Set<Class<?>> scan() {
 
+        return null;
     }
 }
