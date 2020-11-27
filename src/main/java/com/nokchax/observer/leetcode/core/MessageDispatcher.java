@@ -8,6 +8,13 @@ public class MessageDispatcher {
     // make response message
 
     /*
+    @PostConstruct
+    private void init() {
+        // init command and mapping command to command controller
+    }
+     */
+
+    /*
     protected void service(final HttpServletRequest request, final HttpServletResponse response) {
         try {
             // get handler and handling message
