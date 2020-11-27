@@ -39,6 +39,9 @@ dependencies {
 
     //for querydsl
     implementation 'com.querydsl:querydsl-jpa'
+
+    // for reflection
+    implementation 'org.reflections:reflections:0.9.12'
 }
 
 test {
