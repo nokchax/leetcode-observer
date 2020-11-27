@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface CommandMapping {
+public @interface Command {
     String[] commands();
     Authority authority() default Authority.GUEST;
     String description() default "";
