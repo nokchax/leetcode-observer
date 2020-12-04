@@ -15,16 +15,16 @@ public class MessageDispatcher {
      */
 
     /*
-    protected void service(final HttpServletRequest request, final HttpServletResponse response) {
+    protected void service(final RequestMessage request, final ResponseMessage response) {
         try {
             // get handler and handling message
             Object handler = findHandler(request);
 
             handle(handler, request, response);
-        } catch (NotFoundException e) {
+        } catch (ApiException e) {
             logger.error("{}", e.getMessage());
             response.sendError(HttpServletResponse.SC_NOT_FOUND);
-        } catch (InternalServerErrorException e) {
+        } catch (Exception e) {
             logger.error("{}", e.getMessage());
             response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
         } catch (Throwable e) {
